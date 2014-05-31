@@ -3,13 +3,12 @@ PI_EmojiPicker
 
 Emoji Picker View Controller for Mac OS X Mavericks and up based off the code from AGEmojiKeyboard(https://github.com/ayushgoel/iOS-emoji-keyboard)
 
-## Usage
-
-
 
 ## Installation
 
 Copy the files in Emoji Picker into your project and look at the PI Emoji Picker folder to see how the classes are used for more detail.
+
+## Usage
 
 The example file uses a simple NSViewController subclass to show the Emoji picker within an NSPopover:
 
@@ -47,6 +46,9 @@ Implement two delegate methods:
 }
 ```
 
+## Requirements
+
+Written and tested only on 10.9 Mavericks, with Xcode 5.11, and using ARC
 
 ## Author
 
