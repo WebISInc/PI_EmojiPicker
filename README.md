@@ -1,7 +1,13 @@
 PI_EmojiPicker
 ==============
 
-Emoji Picker View Controller for Mac OS X Mavericks and up based off the code from AGEmojiKeyboard(https://github.com/ayushgoel/iOS-emoji-keyboard)
+Simple NSView or NSViewController based picker for Emoji. 
+
+I took the wonderful work of AGEmojiKeyboard (https://github.com/ayushgoel/iOS-emoji-keyboard) as a base to create an OS X version. 
+
+Its extremely simple and worth a couple hours of work. Its useful if you want to allow a user to enter Emoji without having to use the "special keyboard" in the edit menu. 
+
+An example would be like Messages/iChat which has a smiley face picker next to the text entry. 
 
 
 ## Installation
