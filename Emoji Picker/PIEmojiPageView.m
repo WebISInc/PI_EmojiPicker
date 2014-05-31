@@ -43,13 +43,8 @@
 }
 
 - (void)setButtonTexts:(NSMutableArray *)buttonTexts {
-	
-	self.rows = ceil(buttonTexts.count / self.columns);
-	if (self.rows == 0)
-		self.rows = 1;
-	
 	NSAssert(buttonTexts != nil, @"Array containing texts to be set on buttons is nil");
-	
+
 	if (([self.buttons count] - 1) == [buttonTexts count]) {
 		// just reset text on each button
 		
@@ -105,8 +100,6 @@
 	[button setButtonType: NSMomentaryLightButton];
 	[button setBezelStyle: NSRoundedDisclosureBezelStyle];
 	[button setBordered: NO];
-	[button setImage: [NSImage imageNamed: @"Basketball"]];
-	[button setImagePosition: NSImageOnly];
 	[button setTarget: self];
 	[button setAction: @selector(emojiButtonPressed:)];
 	[button.cell setImageScaling:NSImageScaleProportionallyDown];
@@ -121,12 +114,13 @@
 	return button;
 }
 
-- (id)initWithFrame:(NSRect)frame buttonSize:(NSSize)buttonSize columns:(NSUInteger)columns {
+- (id)initWithFrame:(NSRect)frame buttonSize:(NSSize)buttonSize rows:(NSUInteger)rows columns:(NSUInteger)columns {
 	self = [super initWithFrame:frame];
 	if (self) {
 		self.buttonSize = buttonSize;
 		self.columns = columns;
-		self.buttons = [[NSMutableArray alloc] initWithCapacity:25 * columns];
+		self.rows = rows;
+		self.buttons = [[NSMutableArray alloc] initWithCapacity:self.rows * columns];
 	}
 	return self;
 }

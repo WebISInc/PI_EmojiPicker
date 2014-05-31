@@ -26,6 +26,7 @@
  */
 - (id)initWithFrame:(NSRect)frame
          buttonSize:(NSSize)buttonSize
+			   rows:(NSUInteger)rows
             columns:(NSUInteger)columns;
 
 /**

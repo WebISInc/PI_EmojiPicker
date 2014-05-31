@@ -9,7 +9,8 @@
 #import "PIAppDelegate.h"
 #import "PIEmojiViewController.h"
 
-@interface PIAppDelegate ()
+@interface PIAppDelegate () <PIEmojiViewDelegate>
+@property (weak) IBOutlet NSTextField *textField;
 
 @end
 
@@ -22,12 +23,26 @@
 
 - (IBAction)openEmojiPicker:(NSButton *)sender {
 	PIEmojiViewController* emojiVC = [[PIEmojiViewController alloc] initWithNibName:nil bundle:nil];
+	emojiVC.delegate = self;
 	
 	NSPopover* popover = [[NSPopover alloc] init];
 	popover.contentViewController = emojiVC;
 	[popover showRelativeToRect:sender.bounds
 						 ofView:sender
 				  preferredEdge:NSMinXEdge | NSMinYEdge];
+}
+
+-(void)emojiKeyDidUseEmoji:(NSString *)emoji
+{
+	NSString* oldString = self.textField.stringValue;
+	self.textField.stringValue = [oldString stringByAppendingString:emoji];
+}
+
+-(void)emojiKeyBoardViewDidPressBackSpace
+{
+	NSString* oldString = self.textField.stringValue;
+	if (oldString.length)
+		self.textField.stringValue = [oldString substringToIndex:oldString.length-1];
 }
 
 @end

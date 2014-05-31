@@ -21,10 +21,7 @@ NSString *const RecentUsedEmojiCharactersKey = @"RecentUsedEmojiCharactersKey";
 @interface PIEmojiKeyboardView () <PIEmojiPageViewDelegate>
 @property (nonatomic) NSDictionary *emojis;
 @property (weak) IBOutlet NSSegmentedControl *segmentsBar;
-
 @property (weak) IBOutlet NSScrollView *scrollView;
-
-@property (nonatomic) NSMutableArray *pageViews;
 @property (nonatomic) NSString *category;
 @end
 
@@ -154,23 +151,24 @@ NSString *const RecentUsedEmojiCharactersKey = @"RecentUsedEmojiCharactersKey";
 	[self setCurrentEmojiPageView];
 }
 
-// Create a pageView and add it to the scroll view.
-- (PIEmojiPageView *)synthesizeEmojiPageView {
-	NSUInteger columns = [self numberOfColumnsForFrameSize:self.scrollView.bounds.size];
-	PIEmojiPageView *pageView = [[PIEmojiPageView alloc] initWithFrame:self.scrollView.bounds
-															buttonSize:CGSizeMake(ButtonWidth, ButtonHeight)
-															   columns:columns];
-	pageView.delegate = self;
-	[self.pageViews addObject:pageView];
-	[self.scrollView setDocumentView:pageView];
-	return pageView;
-}
-
 // Set emoji page view for given index.
 - (void)setCurrentEmojiPageView {
-	PIEmojiPageView *pageView = [self synthesizeEmojiPageView];
 	NSMutableArray *buttonTexts = [self emojiTextsForCategory:self.category];
+	NSUInteger columns = [self numberOfColumnsForFrameSize:self.scrollView.bounds.size];
+	NSUInteger rows = ceil(buttonTexts.count / columns) + 1;
+	
+	//set the height of this now
+	NSRect thisBounds = self.scrollView.bounds;
+	thisBounds.size.height  = rows * ButtonHeight;
+	
+	PIEmojiPageView *pageView = [[PIEmojiPageView alloc] initWithFrame:thisBounds
+															buttonSize:CGSizeMake(ButtonWidth, ButtonHeight)
+																  rows:rows
+															   columns:columns];
 	[pageView setButtonTexts:buttonTexts];
+	pageView.delegate = self;
+
+	[self.scrollView setDocumentView:pageView];
 }
 
 #pragma mark data methods
