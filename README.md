@@ -53,6 +53,7 @@ Written and tested only on 10.9 Mavericks, with Xcode 5.11, and using ARC
 ## Author
 
 PI_EmojiPicker is authored by Alex Kac
+
 AGEmojiKeyboard is authored by Ayush Goel, ayushgoel111@gmail.com
 
 ## License
