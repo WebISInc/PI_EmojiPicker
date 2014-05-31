@@ -9,6 +9,7 @@ Its extremely simple and worth a couple hours of work. Its useful if you want to
 
 An example would be like Messages/iChat which has a smiley face picker next to the text entry. 
 
+![Image](http://webis.s3.amazonaws.com/PIEmojiDesktopScreenshot.png)
 
 ## Installation
 
