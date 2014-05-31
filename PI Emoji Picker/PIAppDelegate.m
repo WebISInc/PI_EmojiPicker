@@ -42,7 +42,11 @@
 {
 	NSString* oldString = self.textField.stringValue;
 	if (oldString.length)
-		self.textField.stringValue = [oldString substringToIndex:oldString.length-1];
+	{
+		NSUInteger lastCharIndex = [oldString length] - 1; // I assume string is not empty
+		NSRange rangeOfLastChar = [oldString rangeOfComposedCharacterSequenceAtIndex: lastCharIndex];
+		self.textField.stringValue = [oldString substringToIndex: rangeOfLastChar.location];
+	}
 }
 
 @end
