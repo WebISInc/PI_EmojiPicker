@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4049123A1937BBEB0087BC2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404912391937BBEB0087BC2F /* Cocoa.framework */; };
+		404912441937BBEB0087BC2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 404912421937BBEB0087BC2F /* InfoPlist.strings */; };
+		404912461937BBEB0087BC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 404912451937BBEB0087BC2F /* main.m */; };
+		4049124A1937BBEB0087BC2F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 404912481937BBEB0087BC2F /* Credits.rtf */; };
+		4049124D1937BBEB0087BC2F /* PIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4049124C1937BBEB0087BC2F /* PIAppDelegate.m */; };
+		404912501937BBEB0087BC2F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4049124E1937BBEB0087BC2F /* MainMenu.xib */; };
+		404912521937BBEB0087BC2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404912511937BBEB0087BC2F /* Images.xcassets */; };
+		404912591937BBEB0087BC2F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404912581937BBEB0087BC2F /* XCTest.framework */; };
+		4049125A1937BBEB0087BC2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404912391937BBEB0087BC2F /* Cocoa.framework */; };
+		4049126F1937F9300087BC2F /* PIEmojiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4049126E1937F9300087BC2F /* PIEmojiViewController.m */; };
+		406D2ACD19399F29002E1413 /* EmojisList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 406D2AC719399F29002E1413 /* EmojisList.plist */; };
+		406D2ACE19399F29002E1413 /* EmojiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 406D2AC819399F29002E1413 /* EmojiView.xib */; };
+		406D2ACF19399F29002E1413 /* PIEmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D2ACA19399F29002E1413 /* PIEmojiKeyboardView.m */; };
+		406D2AD019399F29002E1413 /* PIEmojiPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D2ACC19399F29002E1413 /* PIEmojiPageView.m */; };
+		406D2AD219399F42002E1413 /* EmojiView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406D2AD119399F42002E1413 /* EmojiView.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4049125B1937BBEB0087BC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4049122E1937BBEB0087BC2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404912351937BBEB0087BC2F;
+			remoteInfo = "PI Emoji Picker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		404912361937BBEB0087BC2F /* PI Emoji Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PI Emoji Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		404912391937BBEB0087BC2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4049123C1937BBEB0087BC2F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4049123D1937BBEB0087BC2F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4049123E1937BBEB0087BC2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		404912411937BBEB0087BC2F /* PI Emoji Picker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PI Emoji Picker-Info.plist"; sourceTree = "<group>"; };
+		404912431937BBEB0087BC2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		404912451937BBEB0087BC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		404912471937BBEB0087BC2F /* PI Emoji Picker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PI Emoji Picker-Prefix.pch"; sourceTree = "<group>"; };
+		404912491937BBEB0087BC2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4049124B1937BBEB0087BC2F /* PIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIAppDelegate.h; sourceTree = "<group>"; };
+		4049124C1937BBEB0087BC2F /* PIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIAppDelegate.m; sourceTree = "<group>"; };
+		4049124F1937BBEB0087BC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		404912511937BBEB0087BC2F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		404912571937BBEB0087BC2F /* PI Emoji PickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PI Emoji PickerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		404912581937BBEB0087BC2F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4049126D1937F9300087BC2F /* PIEmojiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEmojiViewController.h; sourceTree = "<group>"; };
+		4049126E1937F9300087BC2F /* PIEmojiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEmojiViewController.m; sourceTree = "<group>"; };
+		406D2AC719399F29002E1413 /* EmojisList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EmojisList.plist; path = "Emoji Picker/EmojisList.plist"; sourceTree = SOURCE_ROOT; };
+		406D2AC819399F29002E1413 /* EmojiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmojiView.xib; path = "Emoji Picker/EmojiView.xib"; sourceTree = SOURCE_ROOT; };
+		406D2AC919399F29002E1413 /* PIEmojiKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PIEmojiKeyboardView.h; path = "Emoji Picker/PIEmojiKeyboardView.h"; sourceTree = SOURCE_ROOT; };
+		406D2ACA19399F29002E1413 /* PIEmojiKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PIEmojiKeyboardView.m; path = "Emoji Picker/PIEmojiKeyboardView.m"; sourceTree = SOURCE_ROOT; };
+		406D2ACB19399F29002E1413 /* PIEmojiPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PIEmojiPageView.h; path = "Emoji Picker/PIEmojiPageView.h"; sourceTree = SOURCE_ROOT; };
+		406D2ACC19399F29002E1413 /* PIEmojiPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PIEmojiPageView.m; path = "Emoji Picker/PIEmojiPageView.m"; sourceTree = SOURCE_ROOT; };
+		406D2AD119399F42002E1413 /* EmojiView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = EmojiView.xcassets; path = "Emoji Picker/EmojiView.xcassets"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		404912331937BBEB0087BC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4049123A1937BBEB0087BC2F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404912541937BBEB0087BC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4049125A1937BBEB0087BC2F /* Cocoa.framework in Frameworks */,
+				404912591937BBEB0087BC2F /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4049122D1937BBEB0087BC2F = {
+			isa = PBXGroup;
+			children = (
+				404912A1193901550087BC2F /* Emoji Picker */,
+				4049123F1937BBEB0087BC2F /* Example App */,
+				404912381937BBEB0087BC2F /* Frameworks */,
+				404912371937BBEB0087BC2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		404912371937BBEB0087BC2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				404912361937BBEB0087BC2F /* PI Emoji Picker.app */,
+				404912571937BBEB0087BC2F /* PI Emoji PickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		404912381937BBEB0087BC2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				404912391937BBEB0087BC2F /* Cocoa.framework */,
+				404912581937BBEB0087BC2F /* XCTest.framework */,
+				4049123B1937BBEB0087BC2F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4049123B1937BBEB0087BC2F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4049123C1937BBEB0087BC2F /* AppKit.framework */,
+				4049123D1937BBEB0087BC2F /* CoreData.framework */,
+				4049123E1937BBEB0087BC2F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4049123F1937BBEB0087BC2F /* Example App */ = {
+			isa = PBXGroup;
+			children = (
+				4049124B1937BBEB0087BC2F /* PIAppDelegate.h */,
+				4049124C1937BBEB0087BC2F /* PIAppDelegate.m */,
+				4049126D1937F9300087BC2F /* PIEmojiViewController.h */,
+				4049126E1937F9300087BC2F /* PIEmojiViewController.m */,
+				4049124E1937BBEB0087BC2F /* MainMenu.xib */,
+				404912511937BBEB0087BC2F /* Images.xcassets */,
+				404912401937BBEB0087BC2F /* Supporting Files */,
+			);
+			name = "Example App";
+			path = "PI Emoji Picker";
+			sourceTree = "<group>";
+		};
+		404912401937BBEB0087BC2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				404912411937BBEB0087BC2F /* PI Emoji Picker-Info.plist */,
+				404912421937BBEB0087BC2F /* InfoPlist.strings */,
+				404912451937BBEB0087BC2F /* main.m */,
+				404912471937BBEB0087BC2F /* PI Emoji Picker-Prefix.pch */,
+				404912481937BBEB0087BC2F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		404912A1193901550087BC2F /* Emoji Picker */ = {
+			isa = PBXGroup;
+			children = (
+				406D2AC719399F29002E1413 /* EmojisList.plist */,
+				406D2AC819399F29002E1413 /* EmojiView.xib */,
+				406D2AC919399F29002E1413 /* PIEmojiKeyboardView.h */,
+				406D2ACA19399F29002E1413 /* PIEmojiKeyboardView.m */,
+				406D2ACB19399F29002E1413 /* PIEmojiPageView.h */,
+				406D2ACC19399F29002E1413 /* PIEmojiPageView.m */,
+				406D2AD119399F42002E1413 /* EmojiView.xcassets */,
+			);
+			name = "Emoji Picker";
+			path = "PI Emoji Picker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		404912351937BBEB0087BC2F /* PI Emoji Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404912671937BBEB0087BC2F /* Build configuration list for PBXNativeTarget "PI Emoji Picker" */;
+			buildPhases = (
+				404912321937BBEB0087BC2F /* Sources */,
+				404912331937BBEB0087BC2F /* Frameworks */,
+				404912341937BBEB0087BC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PI Emoji Picker";
+			productName = "PI Emoji Picker";
+			productReference = 404912361937BBEB0087BC2F /* PI Emoji Picker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		404912561937BBEB0087BC2F /* PI Emoji PickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4049126A1937BBEB0087BC2F /* Build configuration list for PBXNativeTarget "PI Emoji PickerTests" */;
+			buildPhases = (
+				404912531937BBEB0087BC2F /* Sources */,
+				404912541937BBEB0087BC2F /* Frameworks */,
+				404912551937BBEB0087BC2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4049125C1937BBEB0087BC2F /* PBXTargetDependency */,
+			);
+			name = "PI Emoji PickerTests";
+			productName = "PI Emoji PickerTests";
+			productReference = 404912571937BBEB0087BC2F /* PI Emoji PickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4049122E1937BBEB0087BC2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Web Information Solutions, Inc.";
+				TargetAttributes = {
+					404912561937BBEB0087BC2F = {
+						TestTargetID = 404912351937BBEB0087BC2F;
+					};
+				};
+			};
+			buildConfigurationList = 404912311937BBEB0087BC2F /* Build configuration list for PBXProject "PI Emoji Picker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4049122D1937BBEB0087BC2F;
+			productRefGroup = 404912371937BBEB0087BC2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				404912351937BBEB0087BC2F /* PI Emoji Picker */,
+				404912561937BBEB0087BC2F /* PI Emoji PickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		404912341937BBEB0087BC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				406D2AD219399F42002E1413 /* EmojiView.xcassets in Resources */,
+				406D2ACD19399F29002E1413 /* EmojisList.plist in Resources */,
+				404912441937BBEB0087BC2F /* InfoPlist.strings in Resources */,
+				404912521937BBEB0087BC2F /* Images.xcassets in Resources */,
+				4049124A1937BBEB0087BC2F /* Credits.rtf in Resources */,
+				404912501937BBEB0087BC2F /* MainMenu.xib in Resources */,
+				406D2ACE19399F29002E1413 /* EmojiView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404912551937BBEB0087BC2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		404912321937BBEB0087BC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404912461937BBEB0087BC2F /* main.m in Sources */,
+				406D2ACF19399F29002E1413 /* PIEmojiKeyboardView.m in Sources */,
+				4049126F1937F9300087BC2F /* PIEmojiViewController.m in Sources */,
+				406D2AD019399F29002E1413 /* PIEmojiPageView.m in Sources */,
+				4049124D1937BBEB0087BC2F /* PIAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404912531937BBEB0087BC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4049125C1937BBEB0087BC2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404912351937BBEB0087BC2F /* PI Emoji Picker */;
+			targetProxy = 4049125B1937BBEB0087BC2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		404912421937BBEB0087BC2F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				404912431937BBEB0087BC2F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		404912481937BBEB0087BC2F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				404912491937BBEB0087BC2F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4049124E1937BBEB0087BC2F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4049124F1937BBEB0087BC2F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		404912651937BBEB0087BC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		404912661937BBEB0087BC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		404912681937BBEB0087BC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PI Emoji Picker/PI Emoji Picker-Prefix.pch";
+				INFOPLIST_FILE = "PI Emoji Picker/PI Emoji Picker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		404912691937BBEB0087BC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PI Emoji Picker/PI Emoji Picker-Prefix.pch";
+				INFOPLIST_FILE = "PI Emoji Picker/PI Emoji Picker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4049126B1937BBEB0087BC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PI Emoji Picker.app/Contents/MacOS/PI Emoji Picker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PI Emoji Picker/PI Emoji Picker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PI Emoji PickerTests/PI Emoji PickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4049126C1937BBEB0087BC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PI Emoji Picker.app/Contents/MacOS/PI Emoji Picker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PI Emoji Picker/PI Emoji Picker-Prefix.pch";
+				INFOPLIST_FILE = "PI Emoji PickerTests/PI Emoji PickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		404912311937BBEB0087BC2F /* Build configuration list for PBXProject "PI Emoji Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404912651937BBEB0087BC2F /* Debug */,
+				404912661937BBEB0087BC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404912671937BBEB0087BC2F /* Build configuration list for PBXNativeTarget "PI Emoji Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404912681937BBEB0087BC2F /* Debug */,
+				404912691937BBEB0087BC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4049126A1937BBEB0087BC2F /* Build configuration list for PBXNativeTarget "PI Emoji PickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4049126B1937BBEB0087BC2F /* Debug */,
+				4049126C1937BBEB0087BC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4049122E1937BBEB0087BC2F /* Project object */;
+}
