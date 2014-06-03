@@ -22,6 +22,9 @@
 		406D2ACF19399F29002E1413 /* PIEmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D2ACA19399F29002E1413 /* PIEmojiKeyboardView.m */; };
 		406D2AD019399F29002E1413 /* PIEmojiPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 406D2ACC19399F29002E1413 /* PIEmojiPageView.m */; };
 		406D2AD219399F42002E1413 /* EmojiView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406D2AD119399F42002E1413 /* EmojiView.xcassets */; };
+		40CCD348193D8011004A027F /* RPBorderlessSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CCD345193D8011004A027F /* RPBorderlessSegmentedCell.m */; };
+		40CCD349193D8011004A027F /* RPBorderlessSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CCD347193D8011004A027F /* RPBorderlessSegmentedControl.m */; };
+		40CCD34C193D8052004A027F /* NSImage+DrawAsTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CCD34B193D8052004A027F /* NSImage+DrawAsTemplate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		406D2ACB19399F29002E1413 /* PIEmojiPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PIEmojiPageView.h; path = "Emoji Picker/PIEmojiPageView.h"; sourceTree = SOURCE_ROOT; };
 		406D2ACC19399F29002E1413 /* PIEmojiPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PIEmojiPageView.m; path = "Emoji Picker/PIEmojiPageView.m"; sourceTree = SOURCE_ROOT; };
 		406D2AD119399F42002E1413 /* EmojiView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = EmojiView.xcassets; path = "Emoji Picker/EmojiView.xcassets"; sourceTree = SOURCE_ROOT; };
+		40CCD344193D8011004A027F /* RPBorderlessSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPBorderlessSegmentedCell.h; sourceTree = "<group>"; };
+		40CCD345193D8011004A027F /* RPBorderlessSegmentedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPBorderlessSegmentedCell.m; sourceTree = "<group>"; };
+		40CCD346193D8011004A027F /* RPBorderlessSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPBorderlessSegmentedControl.h; sourceTree = "<group>"; };
+		40CCD347193D8011004A027F /* RPBorderlessSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPBorderlessSegmentedControl.m; sourceTree = "<group>"; };
+		40CCD34A193D8052004A027F /* NSImage+DrawAsTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+DrawAsTemplate.h"; sourceTree = "<group>"; };
+		40CCD34B193D8052004A027F /* NSImage+DrawAsTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+DrawAsTemplate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,10 +168,25 @@
 				406D2ACB19399F29002E1413 /* PIEmojiPageView.h */,
 				406D2ACC19399F29002E1413 /* PIEmojiPageView.m */,
 				406D2AD119399F42002E1413 /* EmojiView.xcassets */,
+				40CCD343193D8011004A027F /* RPBorderlessSegmented */,
 			);
 			name = "Emoji Picker";
 			path = "PI Emoji Picker";
 			sourceTree = "<group>";
+		};
+		40CCD343193D8011004A027F /* RPBorderlessSegmented */ = {
+			isa = PBXGroup;
+			children = (
+				40CCD34A193D8052004A027F /* NSImage+DrawAsTemplate.h */,
+				40CCD34B193D8052004A027F /* NSImage+DrawAsTemplate.m */,
+				40CCD344193D8011004A027F /* RPBorderlessSegmentedCell.h */,
+				40CCD345193D8011004A027F /* RPBorderlessSegmentedCell.m */,
+				40CCD346193D8011004A027F /* RPBorderlessSegmentedControl.h */,
+				40CCD347193D8011004A027F /* RPBorderlessSegmentedControl.m */,
+			);
+			name = RPBorderlessSegmented;
+			path = "Emoji Picker/RPBorderlessSegmented";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -265,9 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CCD34C193D8052004A027F /* NSImage+DrawAsTemplate.m in Sources */,
 				404912461937BBEB0087BC2F /* main.m in Sources */,
 				406D2ACF19399F29002E1413 /* PIEmojiKeyboardView.m in Sources */,
 				4049126F1937F9300087BC2F /* PIEmojiViewController.m in Sources */,
+				40CCD349193D8011004A027F /* RPBorderlessSegmentedControl.m in Sources */,
+				40CCD348193D8011004A027F /* RPBorderlessSegmentedCell.m in Sources */,
 				406D2AD019399F29002E1413 /* PIEmojiPageView.m in Sources */,
 				4049124D1937BBEB0087BC2F /* PIAppDelegate.m in Sources */,
 			);
